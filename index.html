@@ -2,31 +2,32 @@
 <html>
     <head>
         <title>Survey form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
 
-        <header>
-            <h1 id="title">Think Goose Feedback Form</h1>
-            <p id="description">Thank you for taking the time to complete this survey. The results will help us improve our business</p>
+        <div class="container">
+        <header class="header">
+            <h1 id="title" class="title">Think Goose Feedback Form</h1>
+            <p id="description" class="description">Thank you for taking the time to complete this survey. The results will help us improve our business</p>
         </header>
-
-        <container id="container">
+        
             <form id="survey-form" action="/submit-survey-form">
 
             <div class="form-group">
                 <label id="name-label" for="name">Name</label>
-                    <input id="name" type="text" placeholder="Enter your name" required="">
+                <input id="name" class="form-input" type="text" placeholder="Enter your name" required="">
             </div>
 
             <div class="form-group">
                 <label id="age-label" for="age">Age</label>
-                <input id="age" type="text" placeholder="Enter your age" required="">
+                <input id="age" class="form-input" type="text" placeholder="Enter your age" required="">
             </div>
 
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
-                <input id="email" type="text" placeholder="Enter your email" required="">
+                <input id="email" class="form-input" type="text" placeholder="Enter your email" required="">
             </div>
 
             <div class="form-group">
@@ -74,7 +75,7 @@
             </label>
             </div>
 
-            <div id="form-group">
+            <div id="form-group" class="form-group">
             <p>Would you recommend Think Goose to friends or family?</p>
             <label>
                 <input class="recommend" name="recommend" type="radio" value="definitely" checked="">
@@ -93,15 +94,18 @@
                 No
             </label>
             </div>
-
-                <button id="submit" type="submit">Submit</button>
-            </form>
-
+              
             <div class="form-group">
-                <label id="comments-label" for="comments">Please let us know if there is anything else you would like to add about your experience or anything you think we can improve upon.</label>
-                <input id="comments" type="text" placeholder="Type here" required="">
+                <p>Please let us know if there is anything else you would like to add about your experience or anything you think we can improve upon.</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
             </div>
-        </container>
+            
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Submit
+                </button>
+            </div>
+        </form>          
+        </div>
 
     </body>
     
