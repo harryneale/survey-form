@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="title">Think Goose Feedback Form</h1>
+            <p id="description">Thank you for taking the time to complete this survey. The results will help us improve our business</p>
+        </header>
+
+        <container id="container">
+            <form id="survey-form" action="/submit-survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="age-label" for="age">Age</label>
+                <input id="age" type="text" placeholder="Enter your age" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="text" placeholder="Enter your email" required="">
+            </div>
+
+            <div class="form-group">
+                <p>Have you ordered an item from Think Goose before?</p>
+                <select id="dropdown" class="form-control" name="ordered-before" required="">
+                    <option disabled="" selected="" value="">Please choose one of the options:</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>If yes, please check all the products you have purchased.</p>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="pawtrait">
+                Pawtrait
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="standard-mug">
+                Mug
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="tea-towel">
+                Tea Towel
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="mouse-mat">
+                Mouse Mat
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="bed-sheet">
+                Bed Sheet
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="pillow-case">
+                Pillow Case
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="cushion">
+                Cushion
+            </label>
+            <label>
+                <input class="products-checkbox" name="products" type="checkbox" value="phone-case">
+                Phone Case
+            </label>
+            </div>
+
+            <div id="form-group">
+            <p>Would you recommend Think Goose to friends or family?</p>
+            <label>
+                <input class="recommend" name="recommend" type="radio" value="definitely" checked="">
+                Definitely
+            </label>
+            <label>
+                <input class="recommend" name="recommend" type="radio" value="probably">
+                Probably
+            </label>
+            <label>
+                <input class="recommend" name="recommend" type="radio" value="not-sure">
+                Not Sure
+            </label>
+            <label>
+                <input class="recommend" name="recommend" type="radio" value="no">
+                No
+            </label>
+            </div>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+
+            <div class="form-group">
+                <label id="comments-label" for="comments">Please let us know if there is anything else you would like to add about your experience or anything you think we can improve upon.</label>
+                <input id="comments" type="text" placeholder="Type here" required="">
+            </div>
+        </container>
+
+    </body>
+    
+</html>
